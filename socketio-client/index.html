@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket.io</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    
+    <div id="chat-container" class="content-chat shadow">
+        <div id="chat-window" class="window">
+            <div id="chat-output" class="output"></div>
+            <div id="chat-actions" class="actions"></div>
+        </div>
+
+        <div class="form-floating">
+            <input id="username" type="text" class="form-control" placeholder="Username">
+            <label for="username">Username</label>
+        </div>
+
+        <div class="form-floating">
+            <input id="message" type="text" class="form-control"  placeholder="Message">
+            <label for="message">Message</label>
+        </div>
+        <button id="send" class="btn btn-primary w-100">Send</button>
+    </div>
+
+    <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="chat.js"></script>
+    <!-- [END] Scripts -->
+</body>
+</html>
